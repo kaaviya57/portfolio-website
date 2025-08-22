@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <h1> Let's Connect🤝</h1>
+  <p class="subtitle">Open to internships, discussions, and opportunities in tech.</p>
+
+  {% if success %}
+    <p class="highlight">✅ Thanks for your message! I'll get back to you soon.</p>
+  {% endif %}
+
+  <div class="grid contact-grid">
+    <div class="contact-info">
+      <p><strong>Email:</strong><br> kaaviyapk0507@gmail.com</p>
+      <p><strong>LinkedIn:</strong><br> <a href="https://www.linkedin.com/in/kaaviya-pk-a8967b331" target="_blank">linkedin.com/in/kaaviya-pk-a8967b331</a></p>
+      <p><strong>Phone:</strong><br> +91-9481154746</p>
+    </div>
+
+    <div>
+      <form method="POST" action="/contact" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea rows="4" name="message" placeholder="Your Message..." required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    <h2>Kaaviya</h2>
+    <p>“Grateful for your time — thank you for exploring my work.”</p>
+  </div>
+</section>
+{% endblock %}

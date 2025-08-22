@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="section center-text">
+  <h1>👨‍💻 About Me</h1>
+  <img src="{{ url_for('static', filename='kaav2.jpeg') }}" alt="Profile" class="avatar-large">
+  <h2>Hi, I’m Kaaviya — a Computer Science student specializing in IoT, Cybersecurity, and Blockchain.</h2>
+  <p class="quote">“I love working on projects that combine creativity with technology.”</p>
+  <p class="quote">"My goal is to keep learning, experimenting, and growing as a tech enthusiast."</p>
+</section>
+
+<section class="section">
+  <h3>🎓 Education</h3>
+  <p>
+    I'm pursuing my B.E. in Computer Science(IOT, Cybersecurity with Blockchain) at Rajarajeswari College of Engineering .<br>
+    My Journey so far is focused on IoT and Cybersecurity, where I explore how connected devices can improve everyday life while ensuring digital safety. Alongside this, I have been strengthening my skills in Python programming, which I use as a foundation for problem-solving and project development..
+  </p>
+</section>
+
+<section class="section">
+  <h3>💡 Interests</h3>
+  <div class="interest-icons">
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='pro.jpg') }}" class="icon">
+      <p>Programming</p>
+    </div>
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='cyber.jpg') }}" class="icon">
+      <p>CyberSecurity</p>
+    </div>
+    <div class="interest-card">
+      <img src="{{ url_for('static', filename='iot.jpg') }}" class="icon">
+      <p>Internet of Things</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
