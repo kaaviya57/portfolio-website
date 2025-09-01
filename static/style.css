@@ -39,6 +39,7 @@
   color: #94a3b8;
   margin-top:0px;
 }
+
 .icon-img {
     width: 64px;
     height: 64px;
@@ -148,67 +149,31 @@ body {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .card {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 20px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 300px;
-  backdrop-filter: blur(10px);
-}
-.badge {
-  background: #ffffff; /* white */
-  color: #064e3b;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 8px;
-}
-
-/* Contact Form */
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  margin-bottom: 12px;
-  padding: 10px;
-  border-radius: 8px;
-  border: none;
-  background: rgba(255, 255, 255, 0.05);
-  color: #f8fafc;
-}
-
-/* Admin Table */
-.admin-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-.admin-table th, .admin-table td {
-  padding: 12px;
-  border: 1px solid #065f46;
-}
-.admin-table th {
-  background: #065f46;
-}
-.admin-table tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.02);
-}
-
-/*Project*/
-.card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 20px;
+  padding: 24px;
   border-radius: 16px;
   width: 100%;
   max-width: 320px;
   backdrop-filter: blur(12px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  text-align: center; /* center images & text */
+  font-size: 1.2rem; /* 🔥 Increased text size for projects */
   transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+.card img {
+  width: 140px; /* 🔥 Slightly bigger image */
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
 }
 
 .grid {
@@ -229,9 +194,9 @@ body {
 .badge {
   background: #ffffff; /* white */
   color: #064e3b;
-  padding: 5px 10px;
+  padding: 6px 12px;
   border-radius: 12px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
 }
 
@@ -290,22 +255,6 @@ body {
 }
 
 /*blog*/
-.card {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 20px;
-  border-radius: 16px;
-  width: 100%;
-  max-width: 360px;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
 .link {
   display: inline-block;
   margin-top: 10px;
@@ -350,10 +299,11 @@ body {
   margin-top: 20px;
 }
 
+/* Interests Section */
 .interest-icons {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 50px;
   flex-wrap: wrap;
   margin-top: 20px;
 }
@@ -361,16 +311,18 @@ body {
 .interest-card {
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 12px;
-  width: 150px;
+  padding: 24px;
+  border-radius: 14px;
+  width: 170px; /* 🔥 Slightly bigger cards */
+  font-size: 1.1rem; /* 🔥 Increased font size */
+  font-weight: 600;
   backdrop-filter: blur(10px);
 }
 
 .icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 10px;
+  width: 60px; /* 🔥 Bigger icons */
+  height: 60px;
+  margin-bottom: 12px;
 }
 
 /*admin*/
@@ -405,7 +357,7 @@ body {
 
 .admin-table tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.02);
-} please change my images font to 128px and the writingd under images a liittle big 
+} 
 
 
 
